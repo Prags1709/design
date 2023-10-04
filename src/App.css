@@ -1,0 +1,279 @@
+* {
+  font-family: Inter;
+  padding: 0;
+  margin: 0;
+}
+
+.App {
+  display: flex;
+}
+
+.strip {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 40px;
+  min-height: 100vh;
+  background-color: #040E20;
+}
+
+.mainLogo {
+  border-bottom: 1px solid #667085;
+  display: flex;
+  padding: 20px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  cursor: pointer;
+  position: sticky;
+  top: 0;
+}
+
+.topLogo{
+  display: flex;
+  padding: 0px 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  position: sticky;
+  top: 110px;
+}
+
+.downLogo {
+  display: flex;
+  padding: 0px 20px 32px 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+  margin-top: auto;
+  cursor: pointer;
+  position: sticky;
+  bottom: 0;
+}
+
+.subNav {
+  width: 282px;
+  display: flex;
+  padding: 0px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  align-self: stretch;
+  border-right: 1px solid #D0D5DD;
+}
+
+.settings {
+  display: flex;
+  padding: 40px 12px 22px 12px;
+  align-items: flex-start;
+  gap: 8px;
+  color: var(--gray-900, #101828);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.setBox {
+  display: flex;
+  font-size: 16px;
+  gap: 12px;
+  padding: 4px 8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.setBox:nth-child(4) {
+  background-color: #F9FAFB;
+}
+
+.title {
+  font-weight: 500;
+}
+
+.mainBox {
+  width: 100%;
+}
+
+.topNav {
+  height: 72px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #D0D5DD;
+}
+
+.pathflow {
+  width: 250px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.domain {
+  background-color: #F9F5FF;
+  color: #6941C6;
+  padding: 3px 8px;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
+.handeler {
+  width: 250px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.pathflow>img, .handeler>img {
+  cursor: pointer;
+}
+
+.titleText {
+  display: flex;
+  padding: 9px 56px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+.titleText > div:nth-child(1) {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.titleText > div:nth-child(2) {
+  font-size: 18px;
+}
+
+.userBox {
+  width: 90%;
+  margin: auto;
+}
+
+.userContainer {
+  display: flex;
+  width: 100%;
+  padding: 0 0 20px 0;
+}
+
+.userinvite {
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.userinvite h5 {
+  font-size: large;
+}
+
+.userinvite p {
+  font-size: 13px;
+}
+
+.inviteButton {
+  display: flex;
+  background-color: #6E40FF;
+  padding: 6px 12px;
+  gap: 6px;
+  border-radius: 5px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.inviteButton > div {
+  color: #FFF;
+  font-weight: 600;
+}
+
+table {
+  /* border-collapse: collapse; */
+  border: 1px solid #D0D5DD;
+  border-spacing: 0;
+  width: 100%;
+  /* margin-left: 15px; */
+  border-radius: 10px;
+}
+
+.usertable {
+  width: 100%;
+}
+
+thead {
+  height: 24px;
+  text-align: left;
+}
+
+th {
+  background-color: #F9FAFB;
+  padding: 6px 0 6px 10px;
+}
+
+td {
+  padding: 5px 0 5px 10px;
+  border-top: 1px solid var(--gray-200, #EAECF0);
+}
+
+td select {
+  width: 90%;
+  padding: 6px 6px;
+  border-radius: 6px;
+  border-color: #EAECF0;
+}
+
+tr:first-child th:first-child {
+  border-top-left-radius: 10px;
+}
+
+tr:first-child th:last-child {
+  border-top-right-radius: 10px;
+}
+
+.nameCont {
+  display: flex;
+}
+
+.nameCont div {
+  padding: 0 8px;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.trash {
+  cursor: pointer;
+}
+
+hr {
+  border: 1px solid #EAECF0;
+  margin-bottom: 20px;
+
+}
+
+.handelButton {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+  margin-right: 8px;
+}
+
+.handelButton button {
+  padding: 4px 12px;
+  border-radius: 6px;
+}
+
+.resendbutton {
+  border: 1px solid var(--gray-300, #D0D5DD);
+  background-color: white;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.revokebutton {
+  border: 1px solid var(--error-200, #FECDCA);
+  background: var(--error-50, #FEF3F2);
+  font-size: 14px;
+  font-weight: 600;
+  color: #B42318;
+}
