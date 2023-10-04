@@ -51,6 +51,11 @@
   bottom: 0;
 }
 
+.subCont {
+  min-height: 100vh;
+  border-right: 1px solid #D0D5DD;
+}
+
 .subNav {
   width: 282px;
   display: flex;
@@ -59,7 +64,8 @@
   align-items: flex-start;
   gap: 16px;
   align-self: stretch;
-  border-right: 1px solid #D0D5DD;
+  position: sticky;
+  top: 0;
 }
 
 .settings {

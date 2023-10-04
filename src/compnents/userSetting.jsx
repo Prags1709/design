@@ -21,17 +21,20 @@ const SubNav = ()=>{
     const [subNavLogos, setSubNavLogos] = useState(subLogos);
 
     return (
-        <div className="subNav">
-            <div className="settings">Settings</div>
-            <div className="subNavBox">
-                {subNavLogos.map((ele)=>{
-                    return <div key={ele.logo+""+ele.name} className="setBox">
-                        <img src={ele.logo} alt={ele.name} />
-                        <div className="title">{ele.name}</div>
-                    </div>
-                })}
+        <div className="subCont">
+            <div className="subNav">
+                <div className="settings">Settings</div>
+                <div className="subNavBox">
+                    {subNavLogos.map((ele)=>{
+                        return <div key={ele.logo+""+ele.name} className="setBox">
+                            <img src={ele.logo} alt={ele.name} />
+                            <div className="title">{ele.name}</div>
+                        </div>
+                    })}
+                </div>
             </div>
         </div>
+        
     )
 }
 
